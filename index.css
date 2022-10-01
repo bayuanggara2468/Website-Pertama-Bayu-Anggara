@@ -1,0 +1,225 @@
+*, html, body { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: #1a2238;
+    color: #eaeaea;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: tomato;
+    gap: 5px;
+}
+
+.logo-img{
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+
+.logo-title{
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.logo:hover{
+    color: aqua;
+    transition: all 0.5s ease 0s;
+    transform: rotate(2deg);
+}
+
+.btn-cta{
+    margin-right: 10px;   
+    border: none;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: aqua;
+    font-family: tahoma;
+    font-weight: bolder; 
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-cta:hover{
+    background-color: tomato;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul{
+    display: flex;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+li a{
+    transition: all 0.5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover{
+    color: tomato;
+    transform: rotate(2deg);
+}
+
+a{
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+
+.img-foto{
+    width: 100%;
+    max-width: 500px;
+    height: 700px;
+    padding: 10px;
+}
+
+.parallax{
+    background-image: url("https://healthyzona.com/harmony/wp-content/uploads/2021/03/5.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+}
+
+.tentang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1a2238;
+    color:#eaeaea;
+    padding: 15px;
+}
+
+.parallax .tentang button{
+    margin-top: 15px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    gap: 10px;
+    
+}
+
+.card-item{
+    text-align: center;
+    background: #eaeaea;
+    color: rgba(33, 31, 31, 0.891);
+    padding: 15px;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 2px 5px 5px 1px rgba(0,0,0,5);
+}
+
+.card-item .title{
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.card-item .description{
+    font-size: 15px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background: #1a2238;
+    color: #eaeaea;
+}
+
+
+@media screen and (max-width : 500px) {
+    .card{
+        flex-direction: column;
+    }
+
+    .card-item{
+        width: 100%;
+    }
+
+    .container{
+        padding: 40px;
+    }
+
+    .img-foto{
+        width: 500px;
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #1a2238;
+        z-index: 9;
+    }
+
+    footer{
+        margin-bottom: 70px;
+    }
+}
